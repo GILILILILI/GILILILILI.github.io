@@ -14,7 +14,6 @@ border-bottom: solid 3px #946890;
 box-shadow: inset 0 0 0 1px #f2dcef; 
 color: #7b5777; 
 text-shadow: 0 1px 0 #eacae6; } 
-
 a.button.purple:hover { 
 background: #daa2d4; 
 background: -webkit-gradient(linear, 0 0, 0 bottom, from(#daa2d4), to(#e0b1db)); 
@@ -23,7 +22,6 @@ background: linear-gradient(#daa2d4, #e0b1db);
 border: solid 1px #ca91c4; 
 border-bottom: solid 3px #946890; 
 box-shadow: inset 0 0 0 1px #e9c7e6; } 
-
 a.button.purple:active { 
 background: #d49ace; 
 background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d49ace), to(#cc94c6)); 
@@ -39,17 +37,17 @@ var ctx = canvas.getContext('2d');
 ctx.fillStyle = "white"; 
 ctx.fillRect(0, 0, 640, 480); 
 ctx.closePath(); 
-
 } 
 function er1(){ 
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath(); 
 ctx.strokeStyle = 'green'; 
-  x=Number(document.getElementById("x_znach").value); 
+x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 x=x+320; 
 y=240-y;
+ctx.arc(x, y, 2, 0, getRadians(360));
 drawpoint(); 
 ctx.moveTo(320, 0); 
 ctx.lineTo(320, 480); 
@@ -65,10 +63,11 @@ function er2(){
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath();
-  x=Number(document.getElementById("x_znach").value); 
+x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 x=x+320; 
 y=240-y;
+ctx.arc(x, y, 2, 0, getRadians(360));
 ctx.moveTo(320, 0); 
 ctx.lineTo(320, 480); 
 ctx.moveTo(0, 240); 
@@ -80,15 +79,15 @@ ctx.lineTo(500, 300);
 ctx.strokeStyle = 'blue'; 
 ctx.stroke(); 
 } 
-
 function er3(){ 
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath(); 
-  x=Number(document.getElementById("x_znach").value); 
+x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 x=x+320; 
 y=240-y;
+ctx.arc(x, y, 2, 0, getRadians(360));
 ctx.moveTo(320, 0); 
 ctx.lineTo(320, 480); 
 ctx.moveTo(0, 240); 
@@ -100,15 +99,15 @@ ctx.lineTo(450, 200);
 ctx.strokeStyle = 'blue'; 
 ctx.stroke()
 }
-
 function er4(){ 
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath(); 
-  x=Number(document.getElementById("x_znach").value); 
+x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 x=x+320; 
 y=240-y;
+ctx.arc(x, y, 2, 0, getRadians(360));
 ctx.moveTo(320, 0); 
 ctx.lineTo(320, 480); 
 ctx.moveTo(0, 240); 
@@ -120,15 +119,15 @@ ctx.lineTo(450, 100);
 ctx.strokeStyle = 'blue'; 
 ctx.stroke()
 }
-
 function er5(){ 
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath(); 
-  x=Number(document.getElementById("x_znach").value); 
+x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 x=x+320; 
 y=240-y;
+ctx.arc(x, y, 2, 0, getRadians(360));
 ctx.moveTo(320, 0); 
 ctx.lineTo(320, 480); 
 ctx.moveTo(0, 240); 
@@ -142,15 +141,15 @@ ctx.lineTo(600, 300);
 ctx.strokeStyle = 'blue'; 
 ctx.stroke()
 }
-
 function er6(){ 
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath(); 
-  x=Number(document.getElementById("x_znach").value); 
+x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 x=x+320; 
 y=240-y;
+ctx.arc(x, y, 2, 0, getRadians(360));
 ctx.moveTo(320, 0); 
 ctx.lineTo(320, 480); 
 ctx.moveTo(0, 240); 
@@ -163,15 +162,15 @@ ctx.lineTo(470,300);
 ctx.lineTo(600,300); 
 ctx.stroke(); 
 }
-
 function er7(){ 
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath(); 
-  x=Number(document.getElementById("x_znach").value); 
+x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 x=x+320; 
 y=240-y;
+ctx.arc(x, y, 2, 0, getRadians(360));
 ctx.moveTo(320, 0); 
 ctx.lineTo(320, 480); 
 ctx.moveTo(0, 240); 
@@ -183,15 +182,15 @@ ctx.lineTo(500, 300);
 ctx.closePath(); 
 ctx.stroke(); 
 } 
-
 function er8(){ 
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d');
 ctx.beginPath(); 
-  x=Number(document.getElementById("x_znach").value); 
+x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 x=x+320; 
 y=240-y;
+ctx.arc(x, y, 2, 0, getRadians(360));
 ctx.moveTo(320, 0); 
 ctx.lineTo(320, 480); 
 ctx.moveTo(0, 240); 
@@ -207,7 +206,6 @@ ctx.stroke();
 function getRadians(degrees) { 
 return (Math.PI/180)*degrees; 
 } 
-
 </script> 
 </head> 
 <body> 
