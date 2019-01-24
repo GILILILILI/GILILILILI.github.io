@@ -123,6 +123,59 @@ ctx.strokeStyle = 'blue';
 ctx.stroke()
 }
 
+function er6(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.moveTo(320, 0); 
+ctx.lineTo(320, 480); 
+ctx.moveTo(0, 240); 
+ctx.lineTo(640, 240); 
+ctx.moveTo(470, 20); 
+ctx.lineTo(470,200); 
+ctx.lineTo(600, 200); 
+ctx.moveTo(470, 400); 
+ctx.lineTo(470,300); 
+ctx.lineTo(600,300); 
+ctx.stroke(); 
+}
+
+function er7(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.moveTo(320, 0); 
+ctx.lineTo(320, 480); 
+ctx.moveTo(0, 240); 
+ctx.lineTo(640, 240); 
+ctx.moveTo(400,300); 
+ctx.lineTo(400,350); 
+ctx.lineTo(500, 350); 
+ctx.lineTo(500, 300); 
+ctx.closePath(); 
+ctx.stroke(); 
+} 
+
+function er8(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d');
+ctx.beginPath(); 
+ctx.moveTo(320, 0); 
+ctx.lineTo(320, 480); 
+ctx.moveTo(0, 240); 
+ctx.lineTo(640, 240); 
+ctx.moveTo(100, 100); 
+ctx.lineTo(470,100); 
+ctx.lineTo(470,30); 
+ctx.moveTo(100, 200); 
+ctx.lineTo(470, 200); 
+ctx.lineTo(470,350); 
+ctx.stroke(); 
+} 
+function getRadians(degrees) { 
+return (Math.PI/180)*degrees; 
+} 
+
 </script> 
 </head> 
 <body> 
