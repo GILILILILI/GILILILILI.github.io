@@ -38,7 +38,6 @@ ctx.fillStyle = "white";
 ctx.fillRect(0, 0, 640, 480); 
 ctx.closePath(); 
 } 
-
 function er1(){ 
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
@@ -56,17 +55,13 @@ ctx.moveTo(100, 140);
 ctx.lineTo(500, 140);
 ctx.moveTo(100, 340);
 ctx.lineTo(500, 340);
-
-ctx.moveTo(240, 340);
-ctx.arc(240, 100, 100, 0,2 * Math.PI);
-ctx.moveTo(100, 340);
-ctx.arc(240, 100, 100, 0,2 * Math.PI);
-
-
+ctx.moveTo(320, 240);
+ctx.arc(220, 240, 100, 0,2 * Math.PI);
+ctx.moveTo(520, 240);
+ctx.arc(420, 240, 100, 0,2 * Math.PI);
 ctx.strokeStyle = 'blue'; 
 ctx.stroke(); 
 } 
-
 function getRadians(degrees) { 
 return (Math.PI/180)*degrees; 
 } 
