@@ -34,7 +34,7 @@ box-shadow: inset 0 10px 15px 0 #ba87b5; }
 function clean(){ 
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
-ctx.fillStyle = "white"; 
+ctx.fillStyle = "grey"; 
 ctx.fillRect(0, 0, 640, 480); 
 ctx.closePath(); 
 } 
@@ -59,7 +59,7 @@ ctx.moveTo(320, 240);
 ctx.arc(220, 240, 100, 0,2 * Math.PI);
 ctx.moveTo(520, 240);
 ctx.arc(420, 240, 100, 0,2 * Math.PI);
-ctx.strokeStyle = 'blue'; 
+ctx.strokeStyle = 'orange'; 
 ctx.stroke(); 
 } 
 function getRadians(degrees) { 
