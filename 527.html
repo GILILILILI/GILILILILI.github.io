@@ -27,14 +27,19 @@
       }
     }
 
-    function func3() {
-      n = Number(document.getElementById("n_f5_znach").value);
-      var i;
-      for (i = 0; i < n; i++) {
-        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i + " ";
+     function func3() {
+      f = Number(document.getElementById("n_f5_znach").value);
+      e = Number(document.getElementById("n_f6_znach").value);
+      var i = 0;
+      while (f <= e) {
+        i=e+f/(f-e+1);
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + f +" "+ i + "<br>";
+        
+        f++;
       }
-
     }
+
+    
   </script>
 </head>
 
