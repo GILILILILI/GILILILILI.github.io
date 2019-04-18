@@ -9,23 +9,26 @@
       var i = 0;
       while (f <= e) {
         i=i+f;
-        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + f +" "+i + "<br>";
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + f +" "+ i + "<br>";
         
         f++;
       }
     }
 
     function func2() {
-      n = Number(document.getElementById("n_f7_znach").value);
+      f = Number(document.getElementById("n_f3_znach").value);
+      e = Number(document.getElementById("n_f4_znach").value);
       var i = 0;
-      do {
-        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i + " ";
+      while (f <= e) {
+        i=i*f
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i +" "+ f + "<br>";
+        
         i++;
-      } while (i < n);
+      }
     }
 
     function func3() {
-      n = Number(document.getElementById("n_f3_znach").value);
+      n = Number(document.getElementById("n_f5_znach").value);
       var i;
       for (i = 0; i < n; i++) {
         document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i + " ";
@@ -48,8 +51,9 @@
   <br>
   <br>
   <br>
-  <h1>отмороженное</h1> n=
-  <input type="text" value="6" id="n_f7_znach">
+  <h1>отмороженное</h1> 
+  f= <input type="text" value="6" id="n_f3_znach">
+  e= <input type="text" value="6" id="n_f4_znach">
   <a href="#" onclick="func2()" class="button yellow text-blanco text-shadow-negra">совунья</a>
   <div id="otvet2"></div>
 <br>
@@ -64,5 +68,9 @@
   <br>
   <br>
   <br>
+   <h1>за всю историю человечества</h1> 
+  <input type="text" value="9" id="n_f3_znach">
+  <a href="#" onclick="func3()" class="button green text-blanco text-shadow-negra">копатыч</a>
+  <div id="otvet3"></div>
 </body>
 </html>
