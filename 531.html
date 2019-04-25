@@ -1,1 +1,32 @@
+<html>
 
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+      n = Number(document.getElementById("n_f1_znach").value);
+      f = 0
+      i = n
+      while (i <= 2*n) {
+        f = f + i*i;
+        i++;
+      }
+    
+document.getElementById("n_f1_znach").innerHTML = f;
+}
+  </script>
+</head>
+
+<body>
+<br>
+
+  <h1>лабудилабудай</h1> 
+  f= <input type="text" value="1" id="n_f1_znach">
+  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">ЙОУ</a>
+  <div id="otvet1"></div>
+<br>
+  <br>
+  <br>
+  
+</body>
+</html>
