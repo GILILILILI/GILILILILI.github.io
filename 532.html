@@ -1,1 +1,31 @@
+<html> 
 
+<head> 
+<link rel="stylesheet" href="3style.css"> 
+<script> 
+function func1() { 
+var n = Number(document.getElementById("туса").value); 
+var c = 0; 
+var i = 1; 
+while (i <= n) { 
+c = c + (1/i); 
+i++; 
+} 
+document.getElementById("otvet1").innerHTML = c; 
+} 
+</script> 
+
+</head> 
+<body> 
+<br> 
+<a href="#" onclick="func1()" class="button">кнопАчка</a> 
+<br> 
+<br> 
+n= 
+<input type="text" value="1" id="туса"> 
+<br> 
+<br> 
+
+<div id="otvet1"></div> 
+
+</body>
