@@ -1,0 +1,33 @@
+<html> 
+<head> 
+<link rel="stylesheet" href="3style.css"> 
+<script> 
+function func1() { 
+n = Number(document.getElementById("аоаоа").value); 
+var c = 0; 
+var k = 1; 
+var i = 1; 
+while (n >= i) { 
+c = c + 1/i*k ; 
+k=k*(-1); 
+i++; 
+} 
+document.getElementById("otvet1").innerHTML = c; 
+} 
+</script> 
+
+</head> 
+<body> 
+<br> 
+<a href="#" onclick="func1()" class="button">кнопкА</a> 
+<br> 
+<br> 
+n= 
+<input type="text" value="1" id="аоаоа"> 
+<br> 
+<br> 
+
+<div id="otvet1"></div> 
+
+</body> 
+</html>
